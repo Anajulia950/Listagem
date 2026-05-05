@@ -1,0 +1,159 @@
+main{
+  width: 100%;
+  height: 100vh;
+  float: left;
+  background: #2b0608;
+}
+
+#esq{
+  width: 55%;
+  height: 100vh;
+  float: left;
+  background: url('./assets/netflix-bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+#dir{
+  width: 45%;
+  height: 100vh;
+  float: left;
+  background: #2b0608;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login{
+  width: 400px;
+}
+
+.login h1{
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: white;
+}
+
+label{
+  font-size: 0.9rem;
+  color: white;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input{
+  width: 100%;
+  height: 45px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  background: #1e0a0a;
+  color: white;
+}
+
+input::placeholder{
+  color: #b59a9a;
+}
+
+button{
+  width: 100%;
+  height: 45px;
+  border-radius: 25px;
+  border: none;
+  background: #e50914;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+button:hover{
+  background: #f6121d;
+}
+
+.links{
+  text-align: center;
+}
+
+.links span{
+  display: block;
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 767px){
+  main{
+    height: auto;
+    min-height: 100vh;
+    background: #2b0608;
+  }
+
+  #esq{
+    width: 100%;
+    height: 180px;
+    float: none;
+    clear: both;
+    background-position: center top;
+  }
+
+  #dir{
+    width: 100%;
+    height: auto;
+    min-height: calc(100vh - 180px);
+    float: none;
+    clear: both;
+    padding: 20px 0 40px;
+  }
+
+  .login{
+    width: 90%;
+  }
+
+  .login h1{
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  label{
+    font-size: 0.85rem;
+  }
+
+  input{
+    margin-bottom: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .login{
+    width: 320px;
+  }
+
+  #esq{
+    width: 50%;
+  }
+
+  #dir{
+    width: 50%;
+  }
+
+  .login h1{
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 1025px){
+  .login{
+    width: 400px;
+  }
+
+  #esq{
+    width: 55%;
+  }
+
+  #dir{
+    width: 45%;
+  }
+}
